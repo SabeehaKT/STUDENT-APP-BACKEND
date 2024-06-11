@@ -1,5 +1,5 @@
 const express = require("express")
-const mongoos = require("mongoose")
+const mongoose = require("mongoose")
 const cors = require("cors")
 const student=require("./models/student")
 
@@ -18,6 +18,6 @@ app.post("/add",(req,res)=>{
     res.send("test")
 })
 
-app.listen(8080,()=>{
+app.listen(8081,()=>{
     console.log("Server started")
 })
